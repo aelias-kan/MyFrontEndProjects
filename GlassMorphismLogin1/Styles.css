@@ -14,7 +14,7 @@ body
         min-height: 100vh;
         width: 100%;
         padding: 0px 10px;
-        background: url(images/wallpaperflare.com_wallpaper\ \(1\).jpg) , #000;
+        background: url(../images/wallpaperflare.com_wallpaper\ \(1\).jpg) , #000;
         background-position: center;
         background-size: cover;
     }
