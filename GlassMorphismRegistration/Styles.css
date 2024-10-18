@@ -106,14 +106,14 @@ form h2
 }
 
 /* Button Styling */
-.button 
+.submit 
 {
     color: white;
     font-size: 16px;
     margin: 15px 0px;
     transition: 0.3s ease;
 }
-.button input
+.submit input
 {
     color: black;
     font-size: 16px;
@@ -128,7 +128,7 @@ form h2
     border: none;
     outline: none;
 }
-.button input:hover
+.submit input:hover
 {
     background-color: transparent;
     color: white;
