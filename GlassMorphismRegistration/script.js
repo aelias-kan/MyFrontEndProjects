@@ -1,6 +1,6 @@
 // Selecting form and input elements
 const form = document.querySelector("form");
-const passwordInput = document.getElementById("Pass");
+const passwordInput = document.getElementById("password");
 const passToggleBtn = document.getElementById("pass-toggle-btn");
 
 
@@ -18,13 +18,16 @@ const handleFormData = (e) => {
     e.preventDefault();
 
     // Retrieving input elements
-    const fullnameInput = document.getElementById("fName");
-    const emailInput = document.getElementById("Iemail");
+    const FirstnameInput = document.getElementById("FName");
+    const LastnameInput = document.getElementById("LName");
+    const emailInput = document.getElementById("email");
     const dateInput = document.getElementById("DOB");
+    const passwordInput = document.getElementById("password");
     const genderInput = document.getElementById("gender");
 
     // Getting trimmed values from input fields
-    const fullname = fullnameInput.value.trim();
+    const Firstname = FirstnameInput.value.trim();
+    const LastName = LastnameInput.value.trim();
     const email = emailInput.value.trim();
     const password = passwordInput.value.trim();
     const date = dateInput.value;
@@ -38,8 +41,11 @@ const handleFormData = (e) => {
     document.querySelectorAll(".error-text").forEach(errorText => errorText.remove());
 
     // Performing validation checks
-    if (fullname === "") {
-        showError(fullnameInput, "Enter your full name");
+    if (Firstname === "") {
+        showError(FirstnameInput, "Enter your First name");
+    }
+    if (LastName === "") {
+        showError(LastnameInput, "Enter your Last name");
     }
     if (!emailPattern.test(email)) {
         showError(emailInput, "Enter a valid email address");
