@@ -1,6 +1,8 @@
 // Selecting form and input elements
 const form = document.querySelector("form");
 const passwordInput = document.getElementById("Pass");
+const passToggleBtn = document.getElementById("pass-toggle-btn");
+
 
 // Function to display error messages
 const showError = (field, errorText) => {
@@ -61,10 +63,11 @@ const handleFormData = (e) => {
 }
 
 // Toggling password visibility
-// passToggleBtn.addEventListener('click', () => {
-//     passToggleBtn.className = passwordInput.type === "password" ? "fa-solid fa-eye-slash" : "fa-solid fa-eye";
-//     passwordInput.type = passwordInput.type === "password" ? "text" : "password";
-// });
+passToggleBtn.addEventListener('click', () => {
+    passToggleBtn.className = passwordInput.type === "password" ? "fa-solid fa-eye-slash" : "fa-solid fa-eye";
+    passwordInput.type = passwordInput.type === "password" ? "text" : "password";
+});
+
 
 // Handling form submission event
 form.addEventListener("submit", handleFormData);

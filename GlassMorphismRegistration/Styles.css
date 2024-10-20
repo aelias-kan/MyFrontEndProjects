@@ -135,7 +135,19 @@ form h2
     border: 1px solid white;
 }
 
-
+form .password i {
+    position: absolute;
+    right: 0px;
+    /* height: 45px; */
+    /* top: 0px; */
+    font-size: 14px;
+    line-height: 45px;
+    width: 20px;
+    cursor: pointer;
+    color: #939393;
+    text-align: center;
+  }
+  
 @media (max-width: 600px) {
     .container {
       flex-direction: column;
